@@ -148,6 +148,7 @@ On the technical side, I learned:
 5.	Building a layered architecture with Entity, DAO, Database and Repository
    
 On a broader level, I learned that following an incremental development approach is effective. The assignment as structured in stages, minimum requirements to extensions and building it that way meant each stage had a clear goal. When Extension 1 required storing answered questions in addition to the score, that change was a natural next step rather than a problem. It showed me how a well-structured minimum requirement can serve as a solid foundation that extensions can build on cleanly.Apart from that I also get to know that UI/UX really matters, it is very important to increase readability, accessibility, and to improve user experience overall.
+
 Also, to mention AI was also useful when used critically. It helped me in structuring the code, making me understand how the code works and why it is needed, and in terms of AI It is very important to understand the code rather than actually blindly following it. Furthermore AI was used on brainstorming diverse question set for the quiz topics, ensuring a robust testing environment.Additionally I also learned that version control with meaningful commit message is genuinely useful, not just a formality. Being able to go back to a working commit when something crashes made the development process much less stressful. 
 
 ##  Conclusion
@@ -156,11 +157,11 @@ The most valuable part of the project was not any single feature, but understand
 
 ## Bibliography 
 - Android Developers. (2024). *Jetpack Compose overview*. Retrieved from https://developer.android.com/jetpack/compose
-Android Developers. (2024). *Save data in a local database using Room*. Retrieved from https://developer.android.com/training/data-storage/room 
+- Android Developers. (2024). *Save data in a local database using Room*. Retrieved from https://developer.android.com/training/data-storage/room
 - Android Developers. (2024). *Kotlin flows on Android*. Retrieved from https://developer.android.com/kotlin/flow 
 - Kotlin Documentation. (2024). *Serialization*. Retrieved from https://kotlinlang.org/docs/serialization.html 
- - Android Developers. (2024). *State and Jetpack Compose*. Retrieved from https://developer.android.com/develop/ui/compose/state
- - Android Developers. (2024). *Navigation with Compose*. Retrieved from https://developer.android.com/develop/ui/compose/navigation
- - Android Developers. (2024). *ViewModel overview*. Retrieved from https://developer.android.com/topic/libraries/architecture/viewmodel - 
+- Android Developers. (2024). *State and Jetpack Compose*. Retrieved from https://developer.android.com/develop/ui/compose/state
+- Android Developers. (2024). *Navigation with Compose*. Retrieved from https://developer.android.com/develop/ui/compose/navigation
+- Android Developers. (2024). *ViewModel overview*. Retrieved from https://developer.android.com/topic/libraries/architecture/viewmodel - 
 - Google. (2024). *Material Design 3*. Retrieved from https://m3.material.io
 
