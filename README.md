@@ -25,6 +25,7 @@ The final stage was implementing the full history feature. This involved buildin
 For the Styles and Themes, I utilized Material Design 3 as the foundation to build upon. It provided a consistent color scheme and component styling for every screen. Dynamic color was disabled so that the app always looks the same regardless of the device’s system setting. 
 Color was also used meaningfully to give the user instant feedback. Answer fields animate to green when correct and red when wrong using ‘animateColorAsState’:
  ![Screenshot for style and themes](image/reportimage1.png)
+ 
 Additionally the score on the summary and history screens also changes colour based on performance, for instance green for 80% or above, amber for 50% or above, and red below that. 
 ### Lazy Lists
 I used ‘LazyColumn’ across multiple screens instead of using a regular ‘Column’. The difference between them is that ‘LazyColumn’ only renders items that are currently visible on screen, while ‘Column’ renders everything at once. It is very important for the performance, especially on the history and summary screens, where lists of questions or past attempts can be long.
@@ -106,6 +107,7 @@ On the technical side, I learned:
 3.	Managing UI state with ‘ViewModel’ and ‘StateFlow’
 4.	Using ‘Flow’ for reactive database queries with ROOM
 5.	Building a layered architecture with Entity, DAO, Database and Repository
+   
 On a broader level, I learned that following an incremental development approach is effective. The assignment as structured in stages, minimum requirements to extensions and building it that way meant each stage had a clear goal. When Extension 1 required storing answered questions in addition to the score, that change was a natural next step rather than a problem. It showed me how a well-structured minimum requirement can serve as a solid foundation that extensions can build on cleanly. Apart from that I also get to know that UI/UX really matters, it is very important to increase readability, accessibility, and to improve user experience overall. Also, to mention AI was also useful when used critically. It helped me in structuring the code, making me understand how the code works and why it is needed, and in terms of AI It is very important to understand the code rather than actually blindly following it. Furthermore AI was used on brainstorming diverse question set for the quiz topics, ensuring a robust testing environment.
 Additionally I also learned that version control with meaningful commit message is genuinely useful, not just a formality. Being able to go back to a working commit when something crashes made the development process much less stressful. 
 
