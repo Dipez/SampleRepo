@@ -15,7 +15,7 @@ The Questions are loaded from JSON files stored in the assets folder, one file p
 ## DEVELOPMENT APPROACH
 The application was built in stages rather than trying to do everything at once. Stages was committed to version control separately. It made things easy to track what was done and was easier to go back if something crashes.
 ### Stage 1 – Minimum Requirements
-The first stage focused on getting the core quiz working. This stage focused on setting up navigation, loading questions from JSON, displaying one question at a time, tracking the score, and navigating to a summary screen when the quiz finished. The main challenge was to get the state transitions right, I needed to make suer the user could not re-answer a question or skip ahead accidentally.
+The first stage focused on getting the core quiz working. This stage focused on setting up navigation, loading questions from JSON, displaying one question at a time, tracking the score, and navigating to a summary screen when the quiz finished. The main challenge was to get the state transitions right, I needed to make sure the user could not re-answer a question or skip ahead accidentally.
 ### Stage 2 – Extension 1: Question Review
 Once the quiz was working, I added the color coded question review to the summary screen. This required changing the state model in the ViewModel because the app now had to remember every answer the user gave, not just the final score. This taught me that adding new features often means rethinking the data model and not just adding a new screen.
 ### Stage 3 – Extension 2: History with ROOM
@@ -128,7 +128,7 @@ The issue I ran into was passing the list of answered questions to the summary s
 Another challenge was during testing, I discovered that rotating the device was resetting the quiz back to question one. The ViewModel itself survived the rotation, but ‘LaunchedEffect’ was calling ‘loadQuestions’ again every time the screen reappeared. The fix was pretty simple but important, a guard at the start of ‘loadQuestions’ that returns early if questions are already loaded.
 
 ### Rethinking Architecture for Extensions
-When I added the question review feature for Extension 1, I realized I could not just add a new screen. I had to go back and update the ViewModel state to record every answered question throughout the quiz, not just the end. This was a good lesson in planning the data model early, cause the extensions almost always depend on what the underlying architecture is already storing. 
+When I added the question review feature for Extension 1, I realized I could not just add a new screen. I had to go back and update the ViewModel state to record every answered question throughout the quiz, not just the end. This was a natural step in incremental development process. The minimum requirement laid the foundation, and Extension 1 built cleanly on top of it.
 
 ## Evaluating the work
 ### Strengths
@@ -164,6 +164,6 @@ The most valuable part of the project was not any single feature, but understand
 - Kotlin Documentation. (2024). *Serialization*. Retrieved from https://kotlinlang.org/docs/serialization.html 
 - Android Developers. (2024). *State and Jetpack Compose*. Retrieved from https://developer.android.com/develop/ui/compose/state
 - Android Developers. (2024). *Navigation with Compose*. Retrieved from https://developer.android.com/develop/ui/compose/navigation
-- Android Developers. (2024). *ViewModel overview*. Retrieved from https://developer.android.com/topic/libraries/architecture/viewmodel - 
+- Android Developers. (2024). *ViewModel overview*. Retrieved from https://developer.android.com/topic/libraries/architecture/viewmodel 
 - Google. (2024). *Material Design 3*. Retrieved from https://m3.material.io
 
