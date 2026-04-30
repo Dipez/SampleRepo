@@ -1,6 +1,7 @@
 # Reflective Report – Student Quiz Application
 ## Introduction
 This report reflects on the development of the Student Quiz App that was built using Kotlin and Jetpack Compose for Android. The purpose of this application is to allow users to select a topic from a list, complete a 10 multiple-choice quiz question, one at a time, and then see a summary of the results at the end. I also implemented both extension features – a colour coded question review on the summary screen, and also a full history detailed system utilizing ROOM database that lets user revisit any past quiz attempts.
+
 To give this app a modern look, I used light blue colored theme. It  improved readability and easy navigation to the whole application. Moreover it felt refined, professional and smoother to use. The application was developed incrementally, starting with the core minimum requirements and then building up to the extension features. This made the project a useful exercise to android development, state management, and UI/UX thinking. 
 ## OVERVIEW
 The application is built around a straightforward quiz flow. It includes five screens in total:
@@ -59,6 +60,7 @@ To handle the navigation across screens, a ‘NavHost’ was set up inside a sin
 ![Screenshot for NavHost](image/reportimage/reportimage8.png)
 
 The main advantage of this approach is that it is checked at compile time. With string based routes a typo would compile fine but crash at runtime. With type-safe routes, that kind of mistake is caught immediately before the app even builds.
+
 The quiz app in total has five screens, Home, Quiz, Summary, History and History Detail, all of them are defined and connected in one place, making it easy to follow the flow of the app.
 
 ![Screenshot for NavHost](image/reportimage/reportimage9.png)
